@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+    
+        <h1>HOVER ME</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
+        </p>
+    </div>
+    <style>
+        .card {
+  width: 190px;
+  height: 120px;
+  padding: 0.5rem;
+  background: rgb(194, 15, 15);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(85, 11, 11, 0.541);
+  border-left: 2px  rgb(0, 0, 0) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.527);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: rgba(245, 245, 245, 0.644);
+}
+
+.card:hover {
+  height: 254px;
+  transform: skew(0deg);
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(0, 245, 180);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+
+    </style>
+</body>
+</html>
